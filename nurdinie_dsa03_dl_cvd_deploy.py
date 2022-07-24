@@ -17,7 +17,7 @@ REFER:
 
 !pip install pyngrok
 
-!ngrok authtoken 2Be9osFD0K0bGZZ3gBBiMO3OWu6_7XCY7iMVVJSbjzYfm31Yw
+!ngrok authtoken 2CCdOwNmmCHIe3WlX5xAxwDzzA1_5HZEjjf3v8f9c9zA7iHm1
 
 !wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zip
 
@@ -27,14 +27,30 @@ from pyngrok import ngrok
 public_url = ngrok.connect(port='8501')
 public_url
 
-import os
-import pickle
-import numpy as np
+# import subprocess
+# import sys
+# import streamlit as st
+# @st.cache
+# def install(package):
+#     subprocess.check_call([sys.executable, "-m", "pip", "install", package])
+    
+# install('pickle-mixin')
+# install('sklearn')
 
 """Deployment"""
 
 # Commented out IPython magic to ensure Python compatibility.
 # %%writefile DSA03_DL_streamlit_app.py 
+# import subprocess
+# import sys
+# import streamlit as st
+# @st.cache
+# def install(package):
+#     subprocess.check_call([sys.executable, "-m", "pip", "install", package])
+#     
+# install('pickle-mixin')
+# install('sklearn')
+# 
 # # testing form
 # import os
 # import pickle
